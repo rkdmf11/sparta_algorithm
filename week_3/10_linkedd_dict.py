@@ -12,7 +12,8 @@ class LinkedTuple:
             if k == key:
                 return v
 
-class LinkedDict: # 충돌 대비 class
+
+class LinkedDict:  # 충돌 대비 class
     def __init__(self):
         self.items = []
         for i in range(8):
@@ -28,7 +29,6 @@ class LinkedDict: # 충돌 대비 class
         return self.items[index].get(key)
 
 
-
 link = LinkedDict()
 link.add("test", 3)
 print(link.get("test"))
@@ -41,3 +41,4 @@ link.add("test1", 7)
 print(link.get("test1"))
 link.add("just", "Boom")
 print(link.get("just"))
+print(link.items)
